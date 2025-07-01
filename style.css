@@ -1,0 +1,102 @@
+.my_img{
+    height:200px;
+    width:300px;
+    border-radius: 10px;
+    float: right;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #f4f4f4; 
+    color:black; 
+   
+}
+
+
+h1 {
+    text-align: center; 
+    color: black; 
+    margin-bottom: 40px; 
+}
+
+h2 {
+    color: black;
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px;
+    margin-top: 30px; 
+}
+
+h3 {
+    color: black; 
+    margin-top: 20px;
+}
+
+
+
+.my_div {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+ul li {
+    margin-bottom: 8px; 
+}
+
+
+ul ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+a {
+    color: #3498db; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: red; 
+}
+
+.sub{
+    font-weight: bold;;
+}
+
+
+button{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+table{
+    width: 50%;
+   
+}
+
+caption{
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: left;
+    background-color: #f2f2f2;
+}
