@@ -1,24 +1,32 @@
 #navbar {
     align-items: center;
     justify-content: space-between; 
+    position: sticky;
+    top: 0;
+    
+   
 }
 #navbar ul {
     display: flex;
     list-style: none; 
     padding: 0;
-    margin: 0;  
+    margin: 0; 
+   
    }
 
 .nav_items {
     margin: 0 15px; 
+    
 }
 
 #nav_div {
+    position: relative;
     width:max;
     height: 25px;
     background-color: rgb(154, 22, 169);
     padding: 10px 20px;
     display: flex; 
+    
 }
 
 
@@ -30,6 +38,7 @@
     border-radius: 10px;
     float: right;
 }
+
 
 
 body {
@@ -44,13 +53,17 @@ h1 {
     text-align: center; 
     color: black; 
     margin-bottom: 40px; 
+    
 }
 
 h2 {
     color: black;
-    border-bottom: 2px solid #ccc; 
+    
     padding-bottom: 5px;
     margin-top: 30px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -60,13 +73,38 @@ h3 {
 
 
 
-.my_div {
+div {
+    /* display: inline-block; */
     background-color: #ffffff;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px; 
     border-radius: 8px; 
+    border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    
 }
+
+#div1{
+ 
+    justify-items: center;
+    width:20%;
+    
+  
+   
+}
+
+#div2{
+  
+    width: 50%;
+   
+}
+
+#div3{
+    
+    width: 20%;
+
+}
+
 
 
 ul {
@@ -88,7 +126,7 @@ ul ul {
 
 
 a {
-    color: #3498db; 
+    color: rgb(230, 197, 9); 
     text-decoration: none; 
 }
 
@@ -180,4 +218,10 @@ th{
 
 .slider-nav a:hover{
     opacity: 1;
+}
+
+.div_container{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
