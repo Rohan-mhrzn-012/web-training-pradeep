@@ -3,8 +3,7 @@
     justify-content: space-between; 
     position: sticky;
     top: 0;
-    
-   
+       
 }
 #navbar ul {
     display: flex;
@@ -29,14 +28,12 @@
     
 }
 
-
-
-
-.my_img{
+#my_img{
     height:200px;
     width:300px;
     border-radius: 10px;
     float: right;
+    border-radius: 50%;
 }
 
 
@@ -58,7 +55,6 @@ h1 {
 
 h2 {
     color: black;
-    
     padding-bottom: 5px;
     margin-top: 30px; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -69,9 +65,8 @@ h2 {
 h3 {
     color: black; 
     margin-top: 20px;
+    text-decoration: underline;
 }
-
-
 
 div {
     /* display: inline-block; */
@@ -85,40 +80,37 @@ div {
 }
 
 #div1{
- 
     justify-items: center;
     width:20%;
-    
-  
-   
 }
 
 #div2{
-  
-    width: 50%;
+   width: 50%;
    
 }
 
 #div3{
-    
     width: 20%;
-
 }
 
-
+.my_div{
+    background-image: url("contact.jpg");
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+}
 
 ul {
     list-style-type: none; 
-    padding: 0; 
+    padding: 4px; 
+    margin-left: 5px;
 }
 
 ul li {
     margin-bottom: 8px; 
 }
 
-
 ul ul {
-    list-style-type: disc; 
+   list-style-type: square;
     margin-left: 20px; 
     margin-top: 5px;
     margin-bottom: 5px;
@@ -126,7 +118,7 @@ ul ul {
 
 
 a {
-    color: rgb(230, 197, 9); 
+    color: rgb(210, 181, 15); 
     text-decoration: none; 
 }
 
@@ -143,10 +135,16 @@ a:hover {
 button{
     margin-top: 5px;
     margin-left: 10px;
+    background-color: rgb(92, 150, 244);
+}
+
+#my_table{
+border: 2px outset rgb(224, 217, 217);
+
 }
 
 table{
-    width: 50%;
+    width: 70%;
    
 }
 
@@ -221,7 +219,12 @@ th{
 }
 
 .div_container{
+    
     display: flex;
     align-items: flex-start;
     gap: 20px;
+}
+
+#contact_img{
+    float:right;
 }
