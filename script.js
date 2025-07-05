@@ -37,3 +37,7 @@ if(isValid)
     
 }
 
+document.getElementById('submit').addEventListener('click', validate);
+
+
+

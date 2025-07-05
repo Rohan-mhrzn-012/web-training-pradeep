@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in JavaScript</title>
+</head>
+<body>
+
+    <p id = "demo"></p>
+
+<button id="mybutton" >Change the upper text</button>
+<br>
+<div id="mydiv"></div>
+    <script >
+        
+           document.getElementById("demo").innerHTML ="Hello I am Pradeep";
+           document.write("I want to learn web development.");
+           console.log("Good Morning");
+
+           document.getElementById("mybutton").addEventListener("click",show);
+
+           function show(){
+            document.getElementById("demo").innerHTML = "JavaScript is fun...";
+           }
+
+           //for loop
+           let age = 23;
+           let year = 2025;
+           for(let index=0; index<5;index++){
+            document.write("<br>I will be "+ age +" years old in "+ year+"<br>");
+            age= age + 1;
+            year = year + 1;
+           }
+     </script>
+</body>
+</html>
