@@ -34,8 +34,8 @@
     border-radius: 10px;
     float: right;
     border-radius: 50%;
+  
 }
-
 
 
 body {
@@ -50,7 +50,7 @@ h1 {
     text-align: center; 
     color: black; 
     margin-bottom: 40px; 
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
@@ -136,6 +136,7 @@ button{
     margin-top: 5px;
     margin-left: 10px;
     background-color: rgb(92, 150, 244);
+    border-radius: 10%;
 }
 
 #my_table{

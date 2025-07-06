@@ -24,6 +24,7 @@
             document.getElementById("demo").innerHTML = "JavaScript is fun...";
            }
 
+           document.write("<br>Example of for loop<br>");
            //for loop
            let age = 23;
            let year = 2025;
@@ -31,7 +32,34 @@
             document.write("<br>I will be "+ age +" years old in "+ year+"<br>");
             age= age + 1;
             year = year + 1;
+
            }
+
+           document.write("<br>Example of while loop<br>");
+            //while loop
+            let sem=["1st sem","2nd sem","3rd sem","4th sem","5th sem","6th sem","7th sem","8th sem"];
+            let score=[404, 355, 377, 347, 416, 512, 523, 534];
+
+            let total=0;
+            let index=0;
+            while(total<=1500)
+           {
+            document.write("I obtained "+ score[index] +" marks in "+ sem[index] +"<br>");
+            total = total + score[index];
+            document.write("Total="+ total +"<br>");
+            index++;
+           }
+           document.write("example of foreach ");
+
+              //forEach loop
+              let array = [1, 2, 3, 4, 5];
+              array.forEach(element => {
+                document.write(element*2 + "<br>"); 
+                document.write(array[0] + "<br>"); 
+              });
+
+
+        
      </script>
 </body>
 </html>
