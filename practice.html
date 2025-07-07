@@ -6,16 +6,21 @@
     <title>Loop in JavaScript</title>
 </head>
 <body>
-
-    <p id = "demo"></p>
-
-<button id="mybutton" >Change the upper text</button>
-<br>
-<div id="mydiv"></div>
+    <p id="demo"></p>
+    <button id="mybutton" >Change the upper text using innerHTML</button>
+    <br><br>
+    
+    <div id="div1">Here will be example of for loop</div>
+    <div id="div2">I want to change this content.</div>
+    <button id="button2" >Change the upper text using innerText</button>
+    <br><br>
+    <button id="button1" >Click me to see for loop</button>
+    
     <script >
         
            document.getElementById("demo").innerHTML ="Hello I am Pradeep";
-           document.write("I want to learn web development.");
+           document.write("<br>I want to learn web development.");
+           
            console.log("Good Morning");
 
            document.getElementById("mybutton").addEventListener("click",show);
@@ -24,8 +29,20 @@
             document.getElementById("demo").innerHTML = "JavaScript is fun...";
            }
 
-           document.write("<br>Example of for loop<br>");
-           //for loop
+            document.getElementById("button2").addEventListener("click",changeText);
+            function changeText(){
+                document.getElementById("div2").innerText="Changed the content ";
+              }
+
+           document.getElementById("button1").addEventListener("click",showForLoop);
+           function showForLoop(){
+            document.getElementById("div1").innerHTML= forloop();
+           }
+
+           
+
+           function forloop() {
+            //for loop
            let age = 23;
            let year = 2025;
            for(let index=0; index<5;index++){
@@ -34,6 +51,9 @@
             year = year + 1;
 
            }
+            }
+          
+           
 
            document.write("<br>Example of while loop<br>");
             //while loop
@@ -49,13 +69,17 @@
             document.write("Total="+ total +"<br>");
             index++;
            }
-           document.write("example of foreach ");
+           document.write("example of foreach loop");
 
               //forEach loop
               let array = [1, 2, 3, 4, 5];
+              let count = 0;
               array.forEach(element => {
-                document.write(element*2 + "<br>"); 
-                document.write(array[0] + "<br>"); 
+                document.write("<br>"+element*2 + "<br>"); 
+               if (count ==3){
+                return;
+               }
+                count++;
               });
 
 
