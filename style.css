@@ -229,3 +229,27 @@ th{
 #contact_img{
     float:right;
 }
+
+#container1{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+#my_nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#my_item{
+    display:flex;
+   
+}
+#my_icon{
+   
+}
+.border{
+    border:5px dotted pink;
+}
