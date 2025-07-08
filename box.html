@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .container{
+            display: flex;
+            margin:10px;
+            padding:10px;
+        }
+
+        .box{
+            display: flex;
+            border:2px solid black;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding:5px;
+            margin:15px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="nature1.png" alt="SPM" height="100px">
+            <h1>HTML</h1>
+        </div>
+        <div class="box">
+            <img src="nature2.png" alt="AJP"height="100px">
+            <h1>CSS</h1>
+        </div>
+        <div class="box">
+            <img src="nature3.png" alt="POM"height="100px">
+            <h1>JS</h1>
+        </div>
+    </div>
+</body>
+</html>
