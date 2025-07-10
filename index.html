@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Webpage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="face-smile-solid.svg">
-   
-</head>
-<body>
-        
-        <nav id="navbar">
-            <div id="nav_div">
-            <ul>
-                <li class="nav_items"><a href="#">About</a></li>
-                <li class="nav_items"><a href="#">Skills</a></li>
-                <li class="nav_items"><a href="#">Education</a></li>
-                <li class="nav_items"><a href="#">Projects</a></li>
-                <li class="nav_items"><a href="#">Contact</a></li>
-            </ul>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="face-smile-solid.svg"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar_container">
+      <div id="nav_div">
+        <ul>
+          <li class="nav_items" id="item1"><a href="#">About</a></li>
+          <li class="nav_items"><a href="#">Skills</a></li>
+          <li class="nav_items"><a href="#">Education</a></li>
+          <li class="nav_items"><a href="#">Projects</a></li>
+          <li class="nav_items"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-          </div>
-        </nav>
-        <img src="me.JPG" alt="my_img" id="my_img">
-        <h1>Welcome to my Portfolio Webpage</h1>
+    <img src="me.JPG" alt="my_img" id="my_img" />
+    <h1>Welcome to my Portfolio Webpage</h1>
 
-        <h2>About Me</h2>
+    <h2>About Me</h2>
 
     <div class="div_container">
-        
-    <div id="div1">
+      <div id="div1" class="my_div1">
         <ul>
-            <li>Name: Pradeep Manandhar</li>
-            <li>Age: 22</li>
-            <li>Address: Bhaktapur</li>
+          <li>Name: Pradeep Manandhar</li>
+          <li>Age: 22</li>
+          <li>Address: Bhaktapur</li>
         </ul>
-    </div>
+      </div>
 
-    <div id="div2">
+      <div id="div2" class="my_div1">
+        <table id="my_table">
+          <caption>
+            Education
+          </caption>
+          <thead>
+            <th>Board</th>
+            <th>Year</th>
+            <th>Percentage</th>
+            <th>Institution</th>
+          </thead>
+          <tr>
+            <td>NEB</td>
+            <td>2075</td>
+            <td>3.75</td>
+            <td>Learners' Academy</td>
+          </tr>
 
-        <table id="my_table" >
-            <caption>Education</caption>
-            <thead>
-                <th>Board</th>
-                <th>Year</th>
-                <th>Percentage</th>
-                <th>Institution</th>
-            </thead>
-             <tr>
-                <td>NEB</td>
-                <td>2075</td>
-                <td>3.75</td>
-                <td>Learners' Academy</td>
-            </tr>
+          <tr>
+            <td>NEB</td>
+            <td>2078</td>
+            <td>3.29</td>
+            <td>Khwopa Secondary School</td>
+          </tr>
 
-            <tr>
-                <td>NEB</td>
-                <td>2078</td>
-                <td>3.29</td>
-                <td>Khwopa Secondary School</td>
-            </tr>
-
-            <tr>
-                <td>TU</td>
-                <td>2026</td>
-                <td>3.00</td>
-                <td>Bhaktapur Multiple Campus</td>
-            </tr>
-
+          <tr>
+            <td>TU</td>
+            <td>2026</td>
+            <td>3.00</td>
+            <td>Bhaktapur Multiple Campus</td>
+          </tr>
         </table>
-        
-        </div>
+      </div>
 
+      <div id="div3" class="my_div1">
+        <h3>Skills</h3>
+        <ul>
+          <li class="sub">Programming Languages</li>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <li class="sub">Tools</li>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </ul>
+      </div>
     </div>
 
-            
-        
-        <div id="div3">
-            <h3>Skills</h3>
-            <ul>
-                <li class="sub">Programming Languages</li>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-
-                <li class="sub">Tools</li>
-                <ul>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-            </ul>
-        </div>
-
-        
-
-        <!-- <section class="container">
+    <!-- <section class="container">
             <div class="slider-wrapper">
                 <div class="slider">
                     <img id="slide-1" src="1.jpeg" alt="">
@@ -115,12 +111,12 @@
             </div>
         </section> -->
 
-        <!-- <div class="my_div"> 
+    <!-- <div class="my_div"> 
                        
             
         </div> -->
 
-        <!-- <div class="slideshow">
+    <!-- <div class="slideshow">
             <caption>Slideshow</caption>
             <div>
                 <img src="1.jpeg" alt="first image">
@@ -133,42 +129,56 @@
             
         </div> -->
 
-       
+    <footer>
+      <img src="pic.png" alt="contact-picture" id="contact_img" />
+      <div class="my_div">
+        <h3>Contact Me</h3>
+        <ul>
+          <li>Email: sayamipradeep5@gmail.com</li>
+          <p>Phone: 9808699837</p>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pradeep-manandhar-a90855248/"
+              target="_blank"
+              >Linked In</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/pradeep-manandhar" target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
 
-        <footer>
-            <img src="pic.png" alt="contact-picture" id="contact_img">
-            <div class="my_div">
-            <h3>Contact Me</h3>
-             <ul>
-                <li>Email: sayamipradeep5@gmail.com</li>
-                <p>Phone: 9808699837</p>
-                <li> <a href="https://www.linkedin.com/in/pradeep-manandhar-a90855248/" target="_blank">Linked In</a></li>
-                <li><a href="https://github.com/pradeep-manandhar" target="_blank">GitHub</a></li>
-             </ul>  
-
-             <form action="#" method="post">
-             <fieldset>
-                <legend>
-                 <h3>Want to get in contact with me??</h3>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>
+              <h3>Want to get in contact with me??</h3>
             </legend>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
-           
-            <br><br>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+
+            <br /><br />
 
             <label for="number">Mobile Number:</label>
-            <input type="number" id="number" name="number" placeholder="Enter the mobile number">
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="Enter the mobile number"
+            />
 
-            
             <button id="submit">Submit</button>
-            </fieldset>
-            </form>
-        </div>
-        
-            
-            
-        </footer>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body{
+            /* background-color: rgb(180, 36, 180); */
+            border: 10px solid rgb(180, 36, 180);;
+            background-color: rgb(72, 67, 67);
+            color:white;
+            height: 100%;
+            
+        }
+        .container1{
+            display: grid;
+            /* border: 2px solid black; */
+            /* margin: 25px;
+            padding:10px; */
+            /* height: 650px; */
+            /* width:50%; */
+            justify-content: center;
+            align-content: center;
+            /* justify-self: center; */
+            /* align-self: center; */
+            border-radius: 10px;
+            background-color: rgb(72, 67, 67);
+        }
+        .nav_wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            align-content: start;
+            /* border: 2px solid black; */
+            /* height: 100%; */
+            width: 90vw;
+            padding:10px;
+            /* margin:10px 10px 250px 10px; */
+            justify-content: space-evenly;
+            justify-items: center;
+            
+        }
+        .nav_name{
+            /* border: 2px solid black; */
+            margin: 10px;
+            padding: 10px;
+        }
+        .nav_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* border:2px solid black; */
+            padding:10px;
+            margin:10px;
+            /* width: 60%; */
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        .items{
+            /* border:2px solid black; */
+            margin:10px;
+            text-align: center;
+        }
+        .contact_div{
+            /* display: grid;
+            grid-template-columns: 20% auto;
+            justify-content: space-around; */
+            border:2px solid black;
+            margin:10px;
+            padding:10px;
+            font-size: 20px;
+            
+            border-radius: 30px;
+            background-color: rgba(35, 33, 32, 0.996);
+            width: 100px;
+            height: 30px;
+        }
+        #contact_logo{
+            border:2px solid black;
+            padding:15px;
+            
+        }
+        #item4{
+            text-align: center;
+            color:black;
+
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border:2px solid black;
+            padding: 10px;
+            gap:10px;
+            margin: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #img_div{
+            border: 2px solid black;
+            height:250px;
+            width: 250px;
+            border-radius: 50%;
+        }
+        #my_img{
+            display: grid;
+            justify-self: center;
+            
+            height: 250px;
+            border-radius: 50%;
+        }
+        .paragraph{
+            border: 2px solid black;
+            padding:10px;
+        }
+        p{
+            color:white;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="wrapper1"> -->
+        <!-- <div class="container1"> -->
+            <div class="nav_wrapper">
+                <div id="nav_name">
+                    <h1>Pradeep Manandhar</h1>
+                </div>
+                <div class="nav_container">
+                    <div id="item1" class="items"><a href="">Home</a></div>
+                    <div id="item2" class="items"><a href="">About</a></div>
+                    <div id="item3" class="items"><a href="">Portfolio</a></div>
+                </div>
+                
+                
+                    
+                     
+                    <div class="items contact_div"  id="item4"><a href="">📞 Contact</a></div>
+                
+            </div>
+            <div class="content">
+                <div id="img_div">
+                    <img src="me.JPG" alt="my_img" id="my_img">
+                </div>
+                <div class="paragraph">
+                    <p>
+                        <h1>Pradeep Manandhar</h1>
+                        <pre>
+                            He is 
+                            Just A Kid From Bhaktapur
+                        </pre>
+                        Introduce, his name is Pradeep Manandhar,
+                        Currently he is studying at Bhaktapur Multiple Campus. He was born on October 2002. He is a web developer.
+                        
+                    </p>
+                </div>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
+    
+</body>
+</html>
