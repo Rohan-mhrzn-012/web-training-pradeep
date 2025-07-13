@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         body{
             /* background-color: rgb(180, 36, 180); */
-            border: 10px solid rgb(180, 36, 180);;
+            border: 10px solid rgb(180, 36, 180);
             background-color: rgb(72, 67, 67);
             color:white;
             height: 100%;
             
         }
         .container1{
-            display: grid;
+            /* display: grid; */
             /* border: 2px solid black; */
             /* margin: 25px;
             padding:10px; */
             /* height: 650px; */
             /* width:50%; */
-            justify-content: center;
-            align-content: center;
+            /* justify-content: center;
+            align-content: center; */
             /* justify-self: center; */
             /* align-self: center; */
-            border-radius: 10px;
-            background-color: rgb(72, 67, 67);
+            /* border-radius: 10px; */
+            /* background-color: rgb(72, 67, 67); */
         }
         .nav_wrapper{
             display: grid;
@@ -88,17 +91,38 @@
         .content{
             display: grid;
             grid-template-columns: 1fr 2fr;
-            border:2px solid black;
+            /* border:2px solid black; */
             padding: 10px;
             gap:10px;
             margin: 10px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
         }
+        .links1,.links2{
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 1fr ;
+            column-gap: 10%;
+            
+        }
+        #linked,#linked1{
+           grid-column-start: 2;
+            grid-column-end: 3; 
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #github,#github1{
+            grid-column-start:3;
+            grid-column-end:4;
+        }
+        
+        
         #img_div{
+            
             border: 2px solid black;
             height:250px;
             width: 250px;
             border-radius: 50%;
+            margin-left: 20%;
         }
         #my_img{
             display: grid;
@@ -108,14 +132,20 @@
             border-radius: 50%;
         }
         .paragraph{
-            border: 2px solid black;
+            /* border: 2px solid black; */
             padding:10px;
+            width: 80%;
         }
         p{
             color:white;
         }
         a{
             color: white;
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color: rgb(180, 36, 180);
             text-decoration: none;
         }
     </style>
@@ -132,12 +162,8 @@
                     <div id="item2" class="items"><a href="">About</a></div>
                     <div id="item3" class="items"><a href="">Portfolio</a></div>
                 </div>
-                
-                
-                    
-                     
-                    <div class="items contact_div"  id="item4"><a href="">📞 Contact</a></div>
-                
+                <!-- <i class="fa-solid fa-phone"></i>  -->
+                 <div class="items contact_div"  id="item4"><a href="">📞Contact</a></div>
             </div>
             <div class="content">
                 <div id="img_div">
@@ -146,15 +172,22 @@
                 <div class="paragraph">
                     <p>
                         <h1>Pradeep Manandhar</h1>
-                        <pre>
-                            He is 
-                            Just A Kid From Bhaktapur
-                        </pre>
+                <pre>
+                He is 
+                Just A Kid From Bhaktapur
+                </pre>
                         Introduce, his name is Pradeep Manandhar,
                         Currently he is studying at Bhaktapur Multiple Campus. He was born on October 2002. He is a web developer.
                         
                     </p>
+                    <!-- <div class="links1"><button type="click" id="linked"><i class="fa-brands fa-linkedin"></i> Pradeep Manandhar</button>
+                    <button type="click" id="github"><i class="fa-brands fa-github"></i> Pradeep Manandhar</button></div> -->
+                        
+                    <div class="links2"><a href="https://github.com/pradeep-manandhar" id="github1"><i class="fa-brands fa-github"></i> Pradeep Manandhar</a>
+                    <a href="https://www.linkedin.com/in/pradeep-manandhar-a90855248/" id="linked1"><i class="fa-brands fa-linkedin"></i> Pradeep Manandhar</a></div>
+                    
                 </div>
+                
             </div>
         <!-- </div> -->
     <!-- </div> -->
