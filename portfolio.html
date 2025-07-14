@@ -20,36 +20,33 @@
         .nav_wrapper{
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            align-content: start;
-            /* border: 2px solid black; */
-            /* height: 100%; */
+            align-content: start;            
+            height: 12vh;
             width: 90vw;
             padding:10px;
             /* margin:10px 10px 250px 10px; */
             justify-content: space-evenly;
-            justify-items: center;
-            
+            justify-items: center;            
         }
-        .nav_name{
-            /* border: 2px solid black; */
+        .nav_name{            
             margin: 10px;
             padding: 10px;
         }
         .nav_container{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            /* border:2px solid black; */
+            grid-template-columns: 1fr 1fr 1fr;           
             padding:10px;
             margin:10px;
             /* width: 60%; */
             font-size: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;            
         }
-        .items{
-            /* border:2px solid black; */
+        .items{            
             margin:10px;
             text-align: center;
+        }
+        #item1:hover, #item2:hover, #item3:hover{
+            font-size: x-large;
         }
         .contact_div{
             /* display: grid;
@@ -66,8 +63,7 @@
         }
         #contact_logo{
             border:2px solid black;
-            padding:15px;
-            
+            padding:15px;            
         }
         #item4{
             text-align: center;
@@ -75,19 +71,16 @@
         }
         .content{
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            /* border:2px solid black; */
+            grid-template-columns: 1fr 2fr;            
             padding: 10px;
             gap:10px;
             margin: 10px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;            
         }
         .links1,.links2{
             display: grid;
             grid-template-columns: 1fr 2fr 2fr 1fr ;
-            column-gap: 10%;
-            
+            column-gap: 10%;            
         }
         #linked,#linked1{
            grid-column-start: 2;
@@ -98,8 +91,7 @@
         #github,#github1{
             grid-column-start:3;
             grid-column-end:4;
-        }
-        
+        }      
         
         #img_div{            
             border: 2px solid black;
@@ -114,8 +106,7 @@
             height: 250px;
             border-radius: 50%;
         }
-        .paragraph{
-            /* border: 2px solid black; */
+        .paragraph{            
             padding:10px;
             width: 80%;
         }
@@ -170,8 +161,6 @@
     </style>
 </head>
 <body>
-    <!-- <div class="wrapper1"> -->
-        <!-- <div class="container1"> -->
             <div class="nav_wrapper">
                 <div id="nav_name">
                     <h1>Pradeep Manandhar</h1>
@@ -196,8 +185,7 @@
                 Just A Kid From Bhaktapur
                 </pre>
                         Introduce, his name is Pradeep Manandhar,
-                        Currently he is studying at Bhaktapur Multiple Campus. He was born on October 2002. He is a <a href="" id="color">web developer</a>.
-                        
+                        Currently he is studying at Bhaktapur Multiple Campus. He was born on October 2002. He is a <a href="" id="color">web developer</a>.                        
                     </p>
                     <!-- <div class="links1"><button type="click" id="linked"><i class="fa-brands fa-linkedin"></i> Pradeep Manandhar</button>
                     <button type="click" id="github"><i class="fa-brands fa-github"></i> Pradeep Manandhar</button></div> -->
@@ -228,7 +216,7 @@
                 <div id="contact">
                     <h2>Contact Me</h2>
                     <ul><li>E-mail : sayamipradeep5@gmail.com</li></ul>
-                    <form action="">
+                    <form action="#" method="post">
                         <fieldset>
                             <legend>Want to get in contact with me???</legend>
                             <label for="Name">Name:</label><br>
@@ -239,12 +227,6 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
-            
-
-            
-        <!-- </div> -->
-    <!-- </div> -->
-    
+            </div>    
 </body>
 </html>
