@@ -14,22 +14,9 @@
             background-color: rgb(72, 67, 67);
             color:white;
             height: 100%;
-            
+            border-radius: 100px;
         }
-        .container1{
-            /* display: grid; */
-            /* border: 2px solid black; */
-            /* margin: 25px;
-            padding:10px; */
-            /* height: 650px; */
-            /* width:50%; */
-            /* justify-content: center;
-            align-content: center; */
-            /* justify-self: center; */
-            /* align-self: center; */
-            /* border-radius: 10px; */
-            /* background-color: rgb(72, 67, 67); */
-        }
+        
         .nav_wrapper{
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
@@ -71,8 +58,7 @@
             border:2px solid black;
             margin:10px;
             padding:10px;
-            font-size: 20px;
-            
+            font-size: 20px;            
             border-radius: 30px;
             background-color: rgba(35, 33, 32, 0.996);
             width: 100px;
@@ -86,7 +72,6 @@
         #item4{
             text-align: center;
             color:black;
-
         }
         .content{
             display: grid;
@@ -116,8 +101,7 @@
         }
         
         
-        #img_div{
-            
+        #img_div{            
             border: 2px solid black;
             height:250px;
             width: 250px;
@@ -126,8 +110,7 @@
         }
         #my_img{
             display: grid;
-            justify-self: center;
-            
+            justify-self: center;        
             height: 250px;
             border-radius: 50%;
         }
@@ -136,17 +119,53 @@
             padding:10px;
             width: 80%;
         }
+        #about{
+            grid-column-start: 2;
+            width:40%;
+        }
+        #contact{
+            grid-column-start: 2;
+            color: black;
+            background-image: url(contact.jpg);
+            height: 40vh;
+            width: 35vw;
+            padding: 0vw 5vw 0 4vw;
+        }
         p{
             color:white;
         }
         a{
             color: white;
-            text-decoration: none;
-            
+            text-decoration: none;           
         }
         a:hover{
             color: rgb(180, 36, 180);
             text-decoration: none;
+        }
+        input[type=text]:focus{
+            width: 50%;
+            /* background-color: rgb(180, 36, 180);
+            color: white; */
+        }
+         #submit{
+            background: linear-gradient(to bottom right,rgb(72, 67, 67),rgb(180, 36, 180));
+            color:white;
+            border-radius: 10px;
+        }
+         #submit:hover{
+            background: linear-gradient(to bottom right,rgb(180, 36, 180),rgb(72, 67, 67));
+            cursor: pointer;
+            color:white;
+        }
+        #color{
+            text-transform:uppercase;
+            font-size:large;
+            color:rgb(180, 36, 180);
+        }
+        #color:hover{
+            text-transform:uppercase;
+            font-size:xx-large;
+            color:rgb(180, 36, 180);
         }
     </style>
 </head>
@@ -158,14 +177,14 @@
                     <h1>Pradeep Manandhar</h1>
                 </div>
                 <div class="nav_container">
-                    <div id="item1" class="items"><a href="">Home</a></div>
-                    <div id="item2" class="items"><a href="">About</a></div>
-                    <div id="item3" class="items"><a href="">Portfolio</a></div>
+                    <div id="item1" class="items"><a href="#home">Home</a></div>
+                    <div id="item2" class="items"><a href="#about">About</a></div>
+                    <div id="item3" class="items"><a href="#nav_name">Portfolio</a></div>
                 </div>
                 <!-- <i class="fa-solid fa-phone"></i>  -->
-                 <div class="items contact_div"  id="item4"><a href="">📞Contact</a></div>
+                 <div class="items contact_div"  id="item4"><a href="#contact">📞Contact</a></div>
             </div>
-            <div class="content">
+            <div class="content" id="home">
                 <div id="img_div">
                     <img src="me.JPG" alt="my_img" id="my_img">
                 </div>
@@ -177,7 +196,7 @@
                 Just A Kid From Bhaktapur
                 </pre>
                         Introduce, his name is Pradeep Manandhar,
-                        Currently he is studying at Bhaktapur Multiple Campus. He was born on October 2002. He is a web developer.
+                        Currently he is studying at Bhaktapur Multiple Campus. He was born on October 2002. He is a <a href="" id="color">web developer</a>.
                         
                     </p>
                     <!-- <div class="links1"><button type="click" id="linked"><i class="fa-brands fa-linkedin"></i> Pradeep Manandhar</button>
@@ -187,8 +206,43 @@
                     <a href="https://www.linkedin.com/in/pradeep-manandhar-a90855248/" id="linked1"><i class="fa-brands fa-linkedin"></i> Pradeep Manandhar</a></div>
                     
                 </div>
-                
+                <div id="about">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Programming Languages</li>
+                            <ul>
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        <li>Tools</li>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h2>Contact Me</h2>
+                    <ul><li>E-mail : sayamipradeep5@gmail.com</li></ul>
+                    <form action="">
+                        <fieldset>
+                            <legend>Want to get in contact with me???</legend>
+                            <label for="Name">Name:</label><br>
+                            <input type="text" placeholder="Enter your name"><br><br>
+                            <label for="Mobile Number">Mobile Number:</label><br>
+                            <input type="number" placeholder="Enter mobile number">
+                            <button id="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
+            
+
+            
         <!-- </div> -->
     <!-- </div> -->
     
