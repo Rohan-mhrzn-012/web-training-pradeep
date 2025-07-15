@@ -94,26 +94,34 @@
         }      
         
         #img_div{            
-            border: 2px solid black;
-            height:250px;
-            width: 250px;
+            /* border: 2px solid black; */
+            /* height:250px;
+            width: 250px; */
+            height: 25vh;            
+            width: 25vw;
             border-radius: 50%;
             margin-left: 20%;
         }
         #my_img{
             display: grid;
             justify-self: center;        
-            height: 250px;
+            /* height: 250px; */
+            height:34vh;
             border-radius: 50%;
         }
         .paragraph{            
             padding:10px;
             width: 80%;
         }
+        #skill_div, #contact_div{
+            display: grid;
+            width: 100vw;
+        }
         #about{
             grid-column-start: 2;
             width:40%;
         }
+       
         #contact{
             grid-column-start: 2;
             color: black;
@@ -158,6 +166,22 @@
             font-size:xx-large;
             color:rgb(180, 36, 180);
         }
+
+        @media (min-width: 768px) {
+            body{
+                /* background-color: red; */                
+            } 
+                   
+        }
+        @media (max-width: 768px) {
+            body{
+                /* background-color: blue; */                
+            } 
+            #my_img{
+               height:25vh; 
+            }               
+        }
+      
     </style>
 </head>
 <body>
@@ -194,6 +218,10 @@
                     <a href="https://www.linkedin.com/in/pradeep-manandhar-a90855248/" id="linked1"><i class="fa-brands fa-linkedin"></i> Pradeep Manandhar</a></div>
                     
                 </div>
+                
+                
+            </div>
+            <div id="skill_div">
                 <div id="about">
                     <h2>Skills</h2>
                     <ul>
@@ -213,6 +241,8 @@
                         </ul>
                     </ul>
                 </div>
+            </div> 
+            <div id="contact_div">
                 <div id="contact">
                     <h2>Contact Me</h2>
                     <ul><li>E-mail : sayamipradeep5@gmail.com</li></ul>
@@ -227,6 +257,6 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>    
+            </div>   
 </body>
 </html>
